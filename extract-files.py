@@ -73,6 +73,23 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed(
             'libstagefright_foundation-v33.so',
         ),
+    (
+        'vendor/lib64/hw/camera.qcom.so',
+        'vendor/lib64/libFaceDetectpp-0.5.2.so',
+        'vendor/lib64/libfacedet.so'
+    ): blob_fixup()
+        .regex_replace(
+            'libmegface.so',
+            'libfacedet.so'
+        ),
+        .regex_replace(   
+            'libMegviiFacepp-0.5.2.so',
+            'libFaceDetectpp-0.5.2.so'
+        ),
+        .regex_replace(
+            'megviifacepp_0_5_2_model',
+            'facedetectpp_0_5_2_model'
+        ),
 }
 
 module = ExtractUtilsModule(
