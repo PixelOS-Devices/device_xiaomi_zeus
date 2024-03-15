@@ -10,6 +10,10 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/zeus/zeus-vendor.mk)
 
+# MiuiCamera
+$(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
+$(call inherit-product, vendor/xiaomi/miuicamera-zeus/miuicamera-zeus-vendor.mk)
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResZeus \
