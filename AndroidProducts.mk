@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_dagda.mk
+    $(LOCAL_DIR)/aosp_dagda.mk

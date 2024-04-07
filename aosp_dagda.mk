@@ -8,9 +8,9 @@
 $(call inherit-product, device/xiaomi/dagda/device.mk)
 
 # Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_dagda
+PRODUCT_NAME := aosp_dagda
 PRODUCT_DEVICE := dagda
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
