@@ -1053,10 +1053,9 @@ vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
 vendor/etc/thermald-devices.conf
 
-# Touchscreen
-vendor/firmware/st_fts_l2.ftb
-vendor/firmware/st_fts_l2_thp.ftb
-vendor/firmware/stm_fts_production_limits.csv
+# Touchscreen - from thor V816.0.10.0.ULACNXM
+vendor/firmware/st_fts_l1.ftb|f258868a54503e0ad74d8b360a8501274c10ab9d
+vendor/firmware/stm_fts_production_limits.csv|437fa1af33da23ef94107f07239435092baf58a8
 
 # Vibrator
 vendor/firmware/aw8697_haptic.bin
